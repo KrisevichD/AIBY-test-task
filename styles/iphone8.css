@@ -1,0 +1,11 @@
+@media (max-width: 375px) {
+    body {
+        background-image: url("../assets/bg8.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .form__cell--offset {
+        margin-top: 0;
+    }
+}

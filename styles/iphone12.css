@@ -1,0 +1,7 @@
+@media (max-width: 390px) {
+    body {
+        background-image: url("../assets/bg13.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
