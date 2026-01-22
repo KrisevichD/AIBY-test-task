@@ -57,7 +57,8 @@ class I18n {
 
   async loadTranslation(lang) {
     if (!lang) return;
-    const path = `${LOCALES_PATH}${lang}.json`;
+    const url = new URL(window.location);
+    const path = url.origin + `${LOCALES_PATH}${lang}.json`;
     try {
       const resp = await fetch(path, { cache: "reload" });
       if (!resp.ok) throw new Error("Translation not found");
