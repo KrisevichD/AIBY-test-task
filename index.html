@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>AIBY</title>
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/iphone8plus.css" />
-    <link rel="stylesheet" href="./styles/iphone12.css" />
-    <link rel="stylesheet" href="./styles/iphone8.css" />
+    <link rel="stylesheet" href="./styles/adaptive.css" />
     <script src="./scripts/main.js" type="module"></script>
 </head>
 <body>
@@ -18,48 +16,71 @@
             <img src="./assets/images/cross.svg" alt="close" class="cross-btn__img">
         </a>
     <div class="main__container">
-    <h1 class="main__title title" data-i18n="Get Unlimited Access">Get Unlimited <br>Access</h1>
+    <h1 
+        class="main__title title" 
+        data-i18n="Get Unlimited <br>Access"
+        data-js-title
+    >
+        Get Unlimited <br>Access
+    </h1>
     <div class="main__advantages advantages">
         <div class="advantages__card advantages__card--1">
-            <p class="advantages__text">Unlimited Art <br>Creation</p>
+            <p class="advantages__text" data-i18n="Unlimited Art <br>Creation" data-js-advantages>Unlimited Art <br>Creation</p>
         </div>
         <div class="advantages__card advantages__card--2">
-            <p class="advantages__text">Exclusive <br>Styles</p>
+            <p class="advantages__text" data-i18n="Exclusive <br>Styles" data-js-advantages>Exclusive <br>Styles</p>
         </div>
         <div class="advantages__card advantages__card--3">
-            <p class="advantages__text">Magic Avatars <br>With 20% Off</p>
+            <p class="advantages__text" data-i18n="Magic Avatars <br>With 20% Off" data-js-advantages>Magic Avatars <br>With 20% Off</p>
         </div>
     </div>
-    <form action="" class="main__form form">
+    <form action="" class="main__form form" data-js-purchase-form>
         <div class="form__cell purchase">
-            <input class="purchase__input purchase__input--hidden" type="radio" name="purchase" id="apple">
+            <input 
+                class="purchase__input purchase__input--hidden" 
+                type="radio" 
+                name="purchase" 
+                id="apple"
+                value="apple"
+            >
             <label class="purchase__block" for="apple">
                 <div class="purchase__column">
-                    <div class="purchase__title">YEARLY ACCESS</div>
-                    <div class="purchase__subtitle">Just $39.99 per year</div>
+                    <div class="purchase__title" data-i18n="YEARLY ACCESS">YEARLY ACCESS</div>
+                    <div class="purchase__subtitle" data-i18n="Just price per year">Just $39.99 per year</div>
                 </div>
-                <div class="purchase__text">$0.48 <br>per week</div>
+                <div class="purchase__text" data-i18n="price 1 <br>per week">$0.48 <br>per week</div>
             </label>
             <div class="purchase__banner banner">
                 <div class="banner__left-stroke"></div>
-                <div class="banner__block">BEST OFFER</div>
+                <div class="banner__block" data-i18n="BEST OFFER">BEST OFFER</div>
                 <div class="banner__right-stroke"></div>
             </div>
         </div>
         <div class="form__cell purchase">
-            <input class="purchase__input purchase__input--hidden" type="radio" name="purchase" id="google">
+            <input 
+                class="purchase__input purchase__input--hidden" 
+                type="radio" 
+                name="purchase" 
+                id="google"
+                value="google"
+            >
             <label class="purchase__block" for="google">
-                <div class="purchase__title">WEEKLY ACCESS</div>
-                <div class="purchase__text">$6.99 <br>per week</div>
+                <div class="purchase__title" data-i18n="WEEKLY ACCESS">WEEKLY ACCESS</div>
+                <div class="purchase__text" data-i18n="price 2 <br>per week">$6.99 <br>per week</div>
             </label></div>
-        <a href="#" class="form__cell form__cell--offset button--submit">
+        <a 
+            href="" 
+            class="form__cell form__cell--offset submit-btn" 
+            data-js-purchase-submit 
+            data-i18n="Continue"
+        >
             Continue
         </a>
     </form>
     <div class="main__footer footer">
-        <a href="#" class="footer__link">Terms of Use</a>
-        <a href="#" class="footer__link">Privacy Policy</a>
-        <a href="#" class="footer__link">Restore</a>
+        <a href="#" class="footer__link" data-i18n="Terms of Use" data-js-footer-link>Terms of Use</a>
+        <a href="#" class="footer__link" data-i18n="Privacy Policy" data-js-footer-link>Privacy Policy</a>
+        <a href="#" class="footer__link" data-i18n="Restore" data-js-footer-link>Restore</a>
     </div>
 </div>
 </div>

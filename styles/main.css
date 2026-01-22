@@ -132,6 +132,8 @@ a {
     width: 110px;
     height: 146px;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .advantages__text {
@@ -180,10 +182,13 @@ a {
 }
 
 .purchase__block {
-    padding: 9px 56px 9px 24px;
-    display: flex;
-    justify-content: space-between;
+    min-height: 54px;
+    padding: 0 23px;
+    display: grid;
+    grid-template-columns: auto 93px;
+    gap: 8px;
     align-items: center;
+    border: 1px solid transparent;
     border-radius: 28px;
     background-color: var(--color-grey);
 }
@@ -195,10 +200,6 @@ a {
 }
 
 .purchase__input:checked + .purchase__block{
-    width: 100%;
-    height: 56px;
-    box-sizing: border-box;
-    padding: 8px 55px 8px 23px;
     background-color: var(--color-grey-selected);
     border: 1px solid var(--color-primary);
 }
@@ -220,7 +221,7 @@ a {
 
 .purchase__banner{
     position: absolute;
-    top: -0.5px;
+    top: 0px;
     right: 0px;
     pointer-events: none;
 }
@@ -232,7 +233,7 @@ a {
 
 .banner__left-stroke {
     display: block;
-    width: 128px;
+    width: 127px;
     height: 1px;
     background: url("../assets/images/path1.svg");
 }
@@ -277,7 +278,8 @@ a {
     margin-top: 8px;
 }
 
-.button--submit {
+.submit-btn {
+    min-height: 56px;
     border: none;
     display: flex;
     justify-content: center;
@@ -300,10 +302,10 @@ a {
 
 .footer__link {
     color: var(--color-primary);
-    opacity: 0.3016;
     font-family: "SF Pro Thin";
     font-weight: 100;
     font-size: 13px;
+    opacity: 0.3016;
     line-height: 18px;
     text-decoration: underline;
 }
