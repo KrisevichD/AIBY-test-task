@@ -66,6 +66,7 @@ class I18n {
     } catch (err) {
       console.error(err);
     }
+    return null;
   }
 
   applyTranslations(translation) {
