@@ -17,9 +17,9 @@ class I18n {
   }
 
   async init() {
-    let chosenLang = this.getSystemLang();
+    let chosenLang = this.getLangFromQuery();
     if (!chosenLang) {
-      chosenLang = this.getLangFromQuery();
+      chosenLang = this.getSystemLang();
     }
     if (chosenLang) {
       const translation = await this.loadTranslation(chosenLang);
