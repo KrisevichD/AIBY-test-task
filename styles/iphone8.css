@@ -1,11 +1,40 @@
-@media (max-width: 375px) {
+@media (max-height: 736px) {
     body {
-        background-image: url("../assets/bg8.png");
+        background-image: image-set(
+        url("../assets/images/bg8/bg1x.png") 1x,
+        url("../assets/images/bg8/bg2x.png") 2x,
+        url("../assets/images/bg8/bg3x.png") 3x
+    );
         background-size: cover;
         background-repeat: no-repeat;
     }
 
+    .main__title {
+        margin: 0 52px 16px 51px;
+    }
+    
+    .main__advantages {
+        margin: 0 25px 26px 24px;
+    }
+    
+    .main__form {
+        margin: 0 24px 28px 24px;
+    }
+    
+    .main__footer {
+        margin: 0 47px 38px 47px;
+    }
+
+    .advantages__card {
+        width: 106px;
+        height: 139px;
+    }
+
     .form__cell--offset {
         margin-top: 0;
+    }
+
+    .main__footer {
+        margin-bottom: 8px;
     }
 }

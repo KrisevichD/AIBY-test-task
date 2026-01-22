@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: "SF Pro";
-    src: url("../assets/fonts/SF-Pro-Display-Regular.otf");
+    src: url("../assets/fonts/SF-Pro-Display-Regular.woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "SF Pro Thin";
-    src: url("../assets/fonts/SF-Pro-Display-Thin.otf");
+    src: url("../assets/fonts/SF-Pro-Display-Thin.woff2");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -31,7 +31,7 @@
 
 @font-face {
     font-family: "SF Pro Bold";
-    src: url("../assets/fonts/SF-Pro-Display-Bold.otf");
+    src: url("../assets/fonts/SF-Pro-Display-Bold.woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -39,7 +39,7 @@
 
 @font-face {
     font-family: "SF Pro Semibold";
-    src: url("../assets/fonts/SF-Pro-Display-Semibold.otf");
+    src: url("../assets/fonts/SF-Pro-Display-Semibold.woff2");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -47,7 +47,7 @@
 
 @font-face {
     font-family: "SF Pro Heavy";
-    src: url("../assets/fonts/SF-Pro-Display-Heavy.otf");
+    src: url("../assets/fonts/SF-Pro-Display-Heavy.woff2");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -55,7 +55,11 @@
 
 body {
     background-color: var(--color-background);
-    background-image: url("../assets/bg13.png");
+    background-image: image-set(
+        url("../assets/images/bg13/bg1x.png") 1x,
+        url("../assets/images/bg13/bg2x.png") 2x,
+        url("../assets/images/bg13/bg3x.png") 3x
+    );
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--color-primary);
@@ -95,19 +99,20 @@ a {
 }
 
 .main__title {
-    margin: 0 52px 16px 51px;
+    margin-bottom: 24px;
+    text-align: center;
 }
 
 .main__advantages {
-    margin: 0 25px 26px 24px;
+    margin: 0 24px 34px 24px;
 }
 
 .main__form {
-    margin: 0 24px 28px 24px;
+    margin: 0 24px 34px 24px;
 }
 
 .main__footer {
-    margin: 0 47px 8px 47px;
+    margin: 0 55px 38px 54px;
 }
 
 .title {
@@ -124,8 +129,8 @@ a {
 }
 
 .advantages__card {
-    width: 106px;
-    height: 139px;
+    width: 110px;
+    height: 146px;
     position: relative;
 }
 
@@ -137,15 +142,27 @@ a {
 }
 
 .advantages__card--1 {
-    background-image: url("../assets/img1.png");
+    background-image: image-set(
+        url("../assets/images/cards/card1@1x.png") 1x,
+        url("../assets/images/cards/card1@2x.png") 2x,
+        url("../assets/images/cards/card1@3x.png") 3x
+    );
 }
 
 .advantages__card--2 {
-    background-image: url("../assets/img2.png");
+    background-image: image-set(
+        url("../assets/images/cards/card2@1x.png") 1x,
+        url("../assets/images/cards/card2@2x.png") 2x,
+        url("../assets/images/cards/card2@3x.png") 3x
+    );
 }
 
 .advantages__card--3 {
-    background-image: url("../assets/img3.png");
+    background-image: image-set(
+        url("../assets/images/cards/card3@1x.png") 1x,
+        url("../assets/images/cards/card3@2x.png") 2x,
+        url("../assets/images/cards/card3@3x.png") 3x
+    );
 }
 
 .form {
@@ -217,7 +234,7 @@ a {
     display: block;
     width: 128px;
     height: 1px;
-    background: url("../assets/Path-2.svg");
+    background: url("../assets/images/path1.svg");
 }
 
 .banner__block {
@@ -242,7 +259,7 @@ a {
     display: block;
     width: 24.5px;
     height: 27.78px;
-    background: url("../assets/Path.svg");
+    background: url("../assets/images/path2.svg");
 }
 
 .purchase__input:checked ~ .banner .banner__block{
