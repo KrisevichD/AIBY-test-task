@@ -1,5 +1,5 @@
 const SUPPORTED_LANGS = ["de", "en", "es", "fr", "ja", "pt"];
-const LOCALES_PATH = "../i18n/";
+const LOCALES_PATH = "/i18n/";
 const FALLBACK_LANG = "en";
 
 class I18n {
