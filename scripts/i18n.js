@@ -1,5 +1,5 @@
 const SUPPORTED_LANGS = ["de", "en", "es", "fr", "ja", "pt"];
-const LOCALES_PATH = "/i18n/";
+const LOCALES_PATH = "https://krisevichd.github.io/AIBY-test-task/i18n/";
 const FALLBACK_LANG = "en";
 
 class I18n {
@@ -57,8 +57,7 @@ class I18n {
 
   async loadTranslation(lang) {
     if (!lang) return;
-    const url = new URL(window.location);
-    const path = url.origin + url.pathname + `${LOCALES_PATH}${lang}.json`;
+    const path = `${LOCALES_PATH}${lang}.json`;
     try {
       const resp = await fetch(path, { cache: "reload" });
       if (!resp.ok) throw new Error("Translation not found");
