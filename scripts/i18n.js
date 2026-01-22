@@ -65,7 +65,6 @@ class I18n {
       return data;
     } catch (err) {
       console.error(err);
-      return this.loadTranslation(FALLBACK_LANG);
     }
   }
 
